@@ -1,0 +1,391 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "RationalTWDisplay","sans-serif";
+    font-size: 16;
+    overflow-y: hidden;
+}
+
+
+/************************************************ Animation styling starts here ****************************************************/
+section.set{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+} 
+
+section .set{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+section .set div{
+    position: absolute;
+    display: block;
+}
+.set div:nth-child(1){
+    left: 20%;
+    animation: animate 15s linear infinite;
+    animation-delay: -7s;
+}
+.set div:nth-child(2){
+    left: 50%;
+    animation: animate 20s linear infinite;
+    animation-delay: -5s;
+}
+.set div:nth-child(3){
+    left: 70%;
+    animation: animate 20s linear infinite;
+    animation-delay: 0s;
+}
+.set div:nth-child(4){
+    left: 0%;
+    animation: animate 15s linear infinite;
+    animation-delay: -5s;
+}
+.set div:nth-child(5){
+    left: 85%;
+    animation: animate 18s linear infinite;
+    animation-delay: -10s;
+}
+.set div:nth-child(6){
+    left: 0%;
+    animation: animate 12s linear infinite;
+}
+.set div:nth-child(7){
+    left: 15%;
+    animation: animate 14s linear infinite;
+}
+.set div:nth-child(8){
+    left: 60%;
+    animation: animate 15s linear infinite;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        top: -10%;
+        transform: translateX(20px) rotate(0deg);
+    }
+    10%{
+        opacity: 1;
+    }
+    20%{
+        transform: translateX(-20px) rotate(45deg);
+    }
+    40%{
+        transform: translateX(-20px) rotate(90deg);
+    }
+    60%{
+        transform: translateX(20px) rotate(180deg);
+    }
+    80%{
+        transform: translateX(-20px) rotate(180deg);
+    }
+    100%{
+        top: 110%;
+        transform: translateX(-20px) rotate(225deg);
+    }
+} 
+/************************************************ Animation styling ends here ****************************************************/
+
+/************************************************ Navbar styling starts here ****************************************************/
+#navbar ul{
+    padding-top: 30px;
+    padding-left: 250px;
+    position: fixed;
+    display: flex;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 10px;
+    margin: 0 10px;
+    position: relative;
+}
+#navbar a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'RationalTWText',sans-serif;
+    color: #3a735d;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 0.7;
+    letter-spacing: 0.5;
+}
+a.nav-link:after{
+    content: "";
+    position: absolute;
+    background-color: #3a735d;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+a.nav-link:hover::after{
+    width: 100%;
+}
+/************************************************ Navbar styling ends here ************************************************************/
+
+/************************************************ Main Content styling starts here ****************************************************/
+div.box-1{
+    height: 100%;
+    background-image: url("https://img.freepik.com/free-vector/digital-technology-background-with-abstract-wave-border_53876-117508.jpg?w=360");
+}
+.first {
+    padding-left: 100px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #F5F5F5 transparent;
+    width: 100%;
+    height: 70vh;
+}
+.content h1{
+    font-family: "RationalTWDisplay","sans-serif";
+    display: block;
+    text-align: center;
+    padding-top: 10%;
+    color: rgb(33, 87, 50);
+    font-weight: bold;
+    font-size: 120px;
+    letter-spacing: 10px;
+}
+.content h1.space{
+    padding-top: 35%;
+}
+.content h2{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color:rgb(33, 87, 50);
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding-top: 30px;
+}
+.content h3{
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color:rgb(33, 87, 50);
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding-left: 5px;
+}
+.content h2.p-start{
+    display: block;
+    text-align: center;
+    padding-top: 100px;
+    padding-right: 20%;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: rgb(33, 87, 50);
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 10px;
+}
+.content h6{
+    position: relative;
+    display: block;
+    text-align: center;
+    padding-right: 20%;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 30px;
+    color:rgb(33, 87, 50);
+    font-weight: 700; 
+    line-height: 32px;
+}
+
+.page span > h3{
+    padding-top: 15px;
+    font-size: 30px;
+}
+
+.content h1.side-nav{
+    font-family: "RationalTWDisplay","sans-serif";
+    display: block;
+    text-align: center;
+    padding-top: 80px;
+    color: rgb(33, 87, 50);
+    font-weight: bold;
+    font-size: 70px;
+    letter-spacing: 10px;
+}
+.content h1.sec{
+    font-family: "RationalTWDisplay","sans-serif";
+    display: block;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: rgb(33, 87, 50);
+    font-weight: bold;
+    font-size: 70px;
+    letter-spacing: 10px;
+}
+/************************************************ Main Content styling ends here ****************************************************/
+/************************************************ Footer styling starts here *******************************************************/
+.footer{
+    position: fixed;
+}
+.footer .first{
+    height: 100%;
+    width: 100%;
+    font-family: "RationalTWDisplay",sans-serif;
+    font-size: 15px;
+    padding-left: 80px;
+    padding-top: 5px;
+    color: #6A6A6A;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+.footer .links{
+    font-family: "RationalTWDisplay",sans-serif;
+    color: #6A6A6A;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 2px;
+    font-size: 15px;
+    padding: 5px;
+}
+
+/************************************************ Footer styling ends here ********************************************************/
+
+/************************************************ Side Nav styling Starts here ****************************************************/
+.img-1{
+    position:fixed;
+    top: 50%;
+}
+.img-2{
+    position:fixed;
+    right: 0;
+    top: 50%;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.container section{
+    min-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-self:center;
+    height: 80vh;
+    overflow-y: hidden;
+}
+
+.wrapper{
+    background-color: #215732;
+    height: 120px;
+    width: 200px;
+}
+.side-button {
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 20%;
+    padding-left: 30%;
+  }
+  
+.bar1 {
+    width: 80px;
+    height: 3px;
+    background-color: #ffff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+.bar2 {
+    width: 60px;
+    height: 3px;
+    background-color: #ffff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+.bar3 {
+    width: 80px;
+    height: 3px;
+    background-color: #ffff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+.cross h1{
+    font-size: 60px;
+    color: #ffff;
+    padding-left: 40%;
+    }
+
+.side{
+    background-color: #3333;
+}
+/************************************************ Side Nav styling ends here *********************************************************/
+
+@media only screen and (max-width: 768px) {
+    #navbar a,#navbar ul{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+    .img-1{
+        position: fixed;
+        top: 0;
+        left: 30%;
+        height: 10px;
+        width: 10px;
+    }
+    .img-2{
+        position: fixed;
+        left: 30%;
+        top: 85%;
+    }
+    .first {
+        padding-left: 100px;
+        padding-top: 100px;
+        width: 100%;
+        height: 50vh;
+    }
+    .content h1{
+        font-size: 80px;
+    }
+    .content h2.p-start{
+        font-size: 25px;
+    }
+    .content h6{
+        font-size: 20px;
+    }
+    
+    .page span > h3{
+        padding-top: 15px;
+        font-size: 30px;
+    }
+}
+#pre-load{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    background: url(img/pre-loader.png) no-repeat center;
+    z-index: 99999;
+}
